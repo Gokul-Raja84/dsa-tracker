@@ -1,0 +1,129 @@
+
+> tracker@0.1.0 dev
+> next dev
+
+Γû▓ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.56.1:3000
+- Environments: .env
+
+Γ£ô Starting...
+Γ£ô Ready in 1980ms
+Γùï Compiling / ...
+Γ¿» Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (lib\prisma.ts:9:31)
+    at module evaluation (app\page.tsx:1:1)
+    at module evaluation (C:\Users\GOKUL RAJA\Desktop\tracker\.next\dev\server\chunks\ssr\[root-of-the-server]__a6205cd2._.js:111:47)
+   7 | export const prisma: PrismaClient =
+   8 |   globalWithPrisma._prisma ??
+>  9 |   (globalWithPrisma._prisma = new PrismaClient())
+     |                               ^
+  10 | {
+  clientVersion: '7.5.0',
+  errorCode: undefined,
+  retryable: undefined
+}
+Γ¿» Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (lib\prisma.ts:9:31)
+    at module evaluation (app\page.tsx:1:1)
+    at module evaluation (C:\Users\GOKUL RAJA\Desktop\tracker\.next\dev\server\chunks\ssr\[root-of-the-server]__a6205cd2._.js:111:47)
+   7 | export const prisma: PrismaClient =
+   8 |   globalWithPrisma._prisma ??
+>  9 |   (globalWithPrisma._prisma = new PrismaClient())
+     |                               ^
+  10 | {
+  clientVersion: '7.5.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/'
+}
+ GET / 500 in 8.4s (compile: 7.9s, render: 478ms)
+Γ¿» Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (lib\prisma.ts:9:31)
+    at module evaluation (app\page.tsx:1:1)
+    at module evaluation (C:\Users\GOKUL RAJA\Desktop\tracker\.next\dev\server\chunks\ssr\[root-of-the-server]__a6205cd2._.js:111:47)
+   7 | export const prisma: PrismaClient =
+   8 |   globalWithPrisma._prisma ??
+>  9 |   (globalWithPrisma._prisma = new PrismaClient())
+     |                               ^
+  10 | {
+  clientVersion: '7.5.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/'
+}
+Γ¿» Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (lib\prisma.ts:9:31)
+    at module evaluation (app\page.tsx:1:1)
+    at module evaluation (C:\Users\GOKUL RAJA\Desktop\tracker\.next\dev\server\chunks\ssr\[root-of-the-server]__a6205cd2._.js:111:47)
+   7 | export const prisma: PrismaClient =
+   8 |   globalWithPrisma._prisma ??
+>  9 |   (globalWithPrisma._prisma = new PrismaClient())
+     |                               ^
+  10 | {
+  clientVersion: '7.5.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/'
+}
+ GET / 500 in 1414ms (compile: 1372ms, render: 41ms)

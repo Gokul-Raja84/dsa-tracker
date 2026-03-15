@@ -1,0 +1,19 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model DayProgress {
+  id          String   @id @default(cuid())
+  dayIndex    Int      @unique
+  completed   Boolean  @default(false)
+  completedAt DateTime?
+  notes       String?  @db.Text
+  leetcodeUrl String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
