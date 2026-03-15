@@ -23,7 +23,7 @@ export default function BentoHeader({ done, streak }: { done: number; streak: nu
     <div className="w-full flex flex-col gap-4">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
         {/* Cell A */}
-        <div className="md:col-span-4 bg-surface border border-border p-6 flex flex-col justify-center">
+        <div className="md:col-span-4 bg-surface border border-border p-6 flex flex-col justify-center animate-bento bento-cell" style={{ animationDelay: '0ms' }}>
           <div className="font-sans font-extrabold text-[120px] leading-none rough-shadow text-white">
             {large30}
           </div>
@@ -35,7 +35,7 @@ export default function BentoHeader({ done, streak }: { done: number; streak: nu
         <StatsRow done={done} streak={streak} left={left} percentage={percentage} />
       </div>
 
-      <div className="w-full bg-surface border border-border p-3 font-mono text-sm text-muted">
+      <div className="w-full bg-surface border border-border p-3 font-mono text-sm text-muted animate-bento" style={{ animationDelay: '300ms' }}>
          {greeting || "// loading context..."}
       </div>
     </div>

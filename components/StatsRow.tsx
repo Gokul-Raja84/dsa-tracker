@@ -29,14 +29,14 @@ export default function StatsRow({ done, streak, left, percentage }: { done: num
 
   return (
     <>
-      <div className="md:col-span-2 bg-surface border border-border p-6 flex flex-col justify-between">
+      <div className="md:col-span-2 bg-surface border border-border p-6 flex flex-col justify-between animate-bento bento-cell" style={{ animationDelay: '100ms' }}>
         <div className="font-mono text-muted text-sm uppercase">Done</div>
         <div className="font-sans font-extrabold text-7xl text-amber">
           {doneCount}
         </div>
       </div>
 
-      <div className={`md:col-span-2 bg-surface border p-6 flex flex-col justify-between transition-colors duration-400 ${streak >= 5 ? 'animate-pulse-amber' : 'border-border'}`}>
+      <div className={`md:col-span-2 bg-surface border p-6 flex flex-col justify-between transition-colors duration-400 animate-bento bento-cell ${streak >= 5 ? 'animate-pulse-amber' : 'border-border'}`} style={{ animationDelay: '200ms' }}>
         <div className="font-mono text-muted text-sm uppercase flex items-center gap-2">
           Streak <span className="text-xl inline-block origin-bottom" style={{ animation: "flame 1.5s infinite ease-in-out alternate" }}>🔥</span>
         </div>
@@ -45,7 +45,7 @@ export default function StatsRow({ done, streak, left, percentage }: { done: num
         </div>
       </div>
 
-      <div className="md:col-span-4 bg-surface border border-border p-6 flex flex-col justify-between">
+      <div className="md:col-span-4 bg-surface border border-border p-6 flex flex-col justify-between animate-bento bento-cell" style={{ animationDelay: '250ms' }}>
         <div>
           <div className="font-mono text-muted text-sm uppercase flex justify-between">
             <span>Progress</span>
